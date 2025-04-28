@@ -7,6 +7,9 @@ This is a living document that evolves as the project progresses through collabo
 ## Overview
 *A brief summary of the feature, change, or fix being specified.*
 
+### Output Location
+Write the specification in a markdown file in the specs directory (create the specs directory if necessary).
+
 ## Problem Statement
 *A clear and concise statement of the problem being addressed.*
 
