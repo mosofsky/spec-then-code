@@ -2,6 +2,9 @@
 
 This document provides guidance for implementing code based on specifications created using the Spec-Then-Code methodology.
 
+## Output Location
+Write the implementation plan in a markdown file in the specs directory (create the directory if necessary).
+
 ## Implementation Plan
 *A step-by-step plan for implementing the solution, presented as a series of checkable tasks.*
 
