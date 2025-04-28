@@ -1,0 +1,19 @@
+version: "1.0.0"
+namespace: spec-then-code
+prefixes:
+  stc: "Spec-Then-Code prompts and workflows for structured AI-driven development."
+index:
+  - path: README.md
+    description: "Overview of Spec-Then-Code methodology and workflows."
+  - path: prompts/specification.md
+    description: "Prompts for creating detailed specifications."
+  - path: prompts/implementation.md
+    description: "Prompts for implementing code from specifications."
+metadata:
+  author: "Michael Osofsky"
+  website: "https://github.com/mosofsky"
+  license: "MIT"
+instructions:
+  - "To generate a specification, use: 'stc create a user authentication system'"
+  - "To implement from a spec, use: 'stc implement [path-to-spec-file]'"
+  - "The MCP client will search the indexed files for matching guidance and prompt structures."
