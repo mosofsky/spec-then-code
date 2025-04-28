@@ -1,2 +1,85 @@
 # spec-then-code
 LLM prompts for structured software development because quality takes more than just "good vibes".
+
+## Overview
+
+Spec-Then-Code is a methodology for structured software development using Large Language Models (LLMs) designed for situations where quality cannot be compromised. While [vibe coding](https://x.com/karpathy/status/1886192184808149383) (popularized by Andrej Karpathy in February 2025) works well for prototypes, demos, and visual features that can be verified by eye, it falls short when dealing with critical technical problems or complex systems. As Simon Willison [notes](https://simonwillison.net/2025/Mar/19/vibe-coding/), for vibe coding, "Projects should be low stakes." Spec-Then-Code bakes verification directly into the development process, providing a structured approach for high-stakes features and bug fixes where deep understanding of the implementation is essential. The result is more reliable software with clearer requirements, better architecture, and code that developers can confidently maintain in mission-critical environments. This repository provides prompts designed to guide LLMs through implementing all these principles automatically.
+
+## Choosing the Right Approach
+
+Not all AI-assisted development is the same. The right approach depends on both the complexity of the task and the risk associated with getting it wrong:
+
+### Risk vs. Complexity Framework
+
+![AI Coding Approaches quadrant showing complexity vs risk](ai-coding-approaches.png)
+
+- **Low Complexity / Low Risk → Lazy Prompting**  
+  For simple, low-stakes tasks, a quick prompt is often sufficient. Think debugging help, small utility functions, or code formatting.
+
+- **High Complexity / Low Risk → Vibe Coding**  
+  When building prototypes or exploratory features, letting AI generate code with minimal guidance can accelerate development. Perfect for creative exploration when correctness isn't critical.
+
+- **Low Complexity / High Risk → TDD with AI**  
+  For simple but critical components, test-driven development with AI provides a good balance. Have the AI write tests first, then implement the solution that passes those tests.
+
+- **High Complexity / High Risk → Spec-Then-Code**  
+  Complex, high-stakes features demand the most rigorous approach. A detailed specification ensures all requirements, verification criteria, and edge cases are considered before implementation begins.
+
+## When to Use Spec-Then-Code
+
+If it's not a low-risk prototype and the amount of work is more than what you would do in one commit, it's probably worth employing Spec-Then-Code. This approach is especially valuable for mission-critical features where quality cannot be compromised and for changes that span multiple components or development sessions.
+
+## Verification and Definition of "Done"
+
+A cornerstone of Spec-Then-Code is how it establishes clear completion criteria:
+
+- **Evidence over Assertions** — Never accept "task completed" at face value. Require concrete evidence like passing tests, working features, or runtime demonstrations.
+
+- **Clear Definition of Done** — Each task should have explicit verification criteria that unambiguously define when it's truly complete.
+
+- **Completeness Checks** — Verify that all components affected by a change have been properly updated, not just the most visible parts.
+
+By defining "done" with precision, Spec-Then-Code prevents the common pitfall where AIs mark tasks complete while missing critical dependencies or edge cases.
+
+## Context Window Management
+
+A key benefit of Spec-Then-Code is how it manages the limited context windows of both humans and AI:
+
+- **External Persistent Memory** — The specification document serves as a shared knowledge base that persists across multiple development sessions. When you return to a project days later or switch AI tools, you don't need to rebuild context from scratch.
+
+- **Focus on What Matters** — By systematically capturing requirements, code snippets, and verification criteria in a structured document, both you and the AI can focus on implementation without losing sight of the bigger picture.
+
+- **Session Continuity** — When working on complex projects that exceed a single AI session's capacity, the spec provides continuity. You can reference specific sections when asking the AI to implement particular components.
+
+- **Reduced Cognitive Load** — Humans have limited working memory too. The spec offloads the mental burden of tracking all details, allowing you to focus on higher-level direction and quality control.
+
+This approach transforms potentially fragmented AI interactions into a cohesive development process for complex projects that would otherwise exceed context limitations.
+
+## What These Prompts Do
+
+The templates in this repository are designed to automate the Spec-Then-Code approach by:
+
+- **Guiding Specification Creation** — The specification template provides a structured format that ensures all critical aspects are documented, from problem statement to verification criteria.
+
+- **Enforcing Test-First Development** — The implementation guide instructs LLMs to write tests before code, automatically building verification into the process.
+
+- **Automating Completeness Checks** — Prompts instruct the AI to verify all affected components are updated before marking tasks complete.
+
+- **Maintaining Traceability** — The workflow keeps a clear connection between requirements, verification criteria, and implementation steps.
+
+Rather than having to manually guide the AI through each of these practices, these prompts automate the entire workflow, allowing you to focus on the quality of the solution.
+
+## Using in Your IDE
+
+Want to use these prompts in Cursor, Windsurf, or other AI-powered IDEs without copying and pasting? Here's how to do it through the magic of GitMCP:
+
+1. **Connect to this prompt library**
+   - Visit [gitmcp.io](https://gitmcp.io/)
+   - Enter this repository URL: `https://github.com/mosofsky/spec-then-code`
+   - This creates a special link that your AI assistant can use to access these prompts
+
+2. **Add to your AI assistant**
+   - Follow the simple connection instructions provided on the page
+   - Once connected, you can access these prompts directly in your IDE
+   - Just use the `stc` prefix (e.g., `stc create a login system`)
+
