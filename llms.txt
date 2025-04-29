@@ -9,6 +9,8 @@ index:
     description: "Prompts for creating detailed specifications."
   - path: prompts/implementation.md
     description: "Prompts for implementing code from specifications."
+  - path: prompts/commit.md
+    description: "Prompts for writing commit messages."
 metadata:
   author: "Michael Osofsky"
   website: "https://github.com/mosofsky"
