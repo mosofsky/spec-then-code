@@ -76,6 +76,7 @@ Want to use these prompts in Cursor, Windsurf, or other AI-powered IDEs without 
 1. **Connect to this prompt library**
    - Visit [gitmcp.io](https://gitmcp.io/)
    - Enter this repository URL: `https://github.com/mosofsky/spec-then-code`
+   - Click "To MCP"
    - This creates a special link that your AI assistant can use to access these prompts
 
 2. **Add to your AI assistant**
