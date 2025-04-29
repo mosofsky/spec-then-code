@@ -68,6 +68,8 @@ This is a living document that evolves as the project progresses through collabo
 - [ ] Step 2: *Description of specific code change with exact file path*
 
 > **Note:** Each step should be granular and self-contained enough that an AI agent can execute it without additional context. Include specific file paths, function names, and code snippets where needed.
+> 
+> **Size Guidance:** Each executable step should be approximately the magnitude of "one story point" in planning poker terminology. This provides a consistent scale for task complexity and effort estimation.
 
 ### Required Code Changes
 *Specific code modifications needed, with careful attention to dependencies and side effects.*
