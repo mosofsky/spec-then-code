@@ -58,6 +58,20 @@ This is a living document that evolves as the project progresses through collabo
 ## Analysis of Changes Needed
 *A detailed breakdown of what changes will be required to implement the chosen solution.*
 
+## Implementation Plan
+*Detailed step-by-step instructions for implementing the chosen solution.*
+
+### Executable Steps for AI Agent
+*Very detailed, precise steps that an AI coding agent can follow without human intervention. Should reference exact file paths and be specific about modifications.*
+
+- [ ] Step 1: *Description of specific code change with exact file path*
+- [ ] Step 2: *Description of specific code change with exact file path*
+
+> **Note:** Each step should be granular and self-contained enough that an AI agent can execute it without additional context. Include specific file paths, function names, and code snippets where needed.
+
+### Required Code Changes
+*Specific code modifications needed, with careful attention to dependencies and side effects.*
+
 ## Test-Driven Development
 *Define verification mechanisms before implementation to ensure quality and correctness.*
 
@@ -76,7 +90,13 @@ This is a living document that evolves as the project progresses through collabo
 ### System Integration Points
 *How the changes integrate with the rest of the system and verification needed at these points.*
 
-### Success Verification Procedure
-*Step-by-step procedure to verify the entire solution works as expected after implementation.*
-
 > **Note:** All tests should be defined and reviewed BEFORE beginning code implementation. This ensures that the implementation is guided by clear verification criteria rather than assumptions.
+
+## AI-Human Collaboration Notes
+*Guidance on the division of responsibility between AI and human collaborators.*
+
+### AI-Executable Tasks
+*Tasks that can be fully handled by an AI coding agent.*
+
+### Human Verification Points
+*Critical points where human review or testing is needed.*
