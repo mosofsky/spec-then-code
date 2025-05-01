@@ -14,16 +14,16 @@ Not all AI-assisted development is the same. The right approach depends on both 
 ![AI Coding Approaches quadrant showing complexity vs risk](ai-coding-approaches.png)
 
 - **Low Complexity / Low Risk → Lazy Prompting**  
-  For simple, low-stakes tasks, a quick prompt is often sufficient. Think debugging help, small utility functions, or code formatting.
+  For simple, low-stakes tasks, a quick, imprecise prompt is often sufficient. As Andrew Ng [defines it](https://www.deeplearning.ai/the-batch/issue-295/): "Contrary to standard prompting advice that you should give LLMs the context they need to succeed, I find it's sometimes faster to be lazy and dash off a quick, imprecise prompt and see what happens. The key to whether this is a good idea is whether you can quickly assess the output quality." Think debugging help, small utility functions, or code formatting. In Ng's words, "In lazy prompting, we add details to the prompt only when they are needed."
 
 - **High Complexity / Low Risk → Vibe Coding**  
-  When building prototypes or exploratory features, letting AI generate code with minimal guidance can accelerate development. Perfect for creative exploration when correctness isn't critical.
+  When building prototypes or exploratory features, letting AI generate code with minimal guidance can accelerate development. As [Andrej Karpathy describes](https://x.com/karpathy/status/1886192184808149383), this approach embraces the AI's ability to generate working code from loose descriptions. It's ideal for creative exploration, rapid iteration, and features where visual or functional confirmation is straightforward. The focus is on velocity and innovation rather than precision.
 
 - **Low Complexity / High Risk → TDD with AI**  
-  For simple but critical components, test-driven development with AI provides a good balance. Have the AI write tests first, then implement the solution that passes those tests.
+  For simple but critical components where correctness is essential, test-driven development with AI provides an effective balance. As Ioannis Moustakis [explains](https://www.qodo.ai/blog/ai-code-assistants-test-driven-development/): "Test-driven development provides a framework for code generation that acts as user-defined, context-specific 'guard rails' for your model or assistant." This approach begins with having the AI write comprehensive tests that encode requirements as executable verification criteria. These tests initially fail, then guide the implementation phase, ensuring that even simple features meet their precise specifications and maintain correctness over time. Critically, human judgment remains essential in reviewing and validating tests—regardless of who wrote them—as these tests form the foundation from which the final product will grow.
 
 - **High Complexity / High Risk → Spec-Then-Code**  
-  Complex, high-stakes features demand the most rigorous approach. A detailed specification ensures all requirements, verification criteria, and edge cases are considered before implementation begins.
+  Complex, high-stakes features demand the most rigorous approach to minimize risks and ensure quality. Detailed specifications document all requirements, edge cases, and verification criteria before implementation begins. This comprehensive planning process creates shared understanding, facilitates systematic testing, and produces maintainable solutions. For mission-critical systems where failures would be costly, this investment in upfront design pays significant dividends.
 
 ## When to Use Spec-Then-Code
 
