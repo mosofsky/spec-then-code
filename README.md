@@ -89,6 +89,19 @@ A key benefit of Spec-Then-Code is how it manages the limited context windows of
 
 This approach transforms potentially fragmented AI interactions into a cohesive development process for complex projects that would otherwise exceed context limitations.
 
+## Beyond Code: Extensions to Marketing and Branding
+
+While Spec-Then-Code primarily focuses on structured software development, the same principles can be extended to non-code aspects of product development:
+
+- **Brand Identity Development** — Using structured prompts to generate tone of voice guides and visual style specifications
+- **Marketing Material Generation** — Applying specification-driven approaches to create consistent marketing assets
+- **Cross-Discipline Integration** — Instructing AI tools to follow brand guidelines when generating user-facing content in applications
+
+These extensions fall outside the primary scope of what Spec-Then-Code currently aims to facilitate, but practitioners interested in exploring these areas may find value in the following resources:
+
+- Kevin Leneway's interview (https://www.youtube.com/watch?v=CIAu6WeckQ0) provides additional perspectives on extending structured AI approaches across the product lifecycle
+- Armando Maynez's article "From 'Vibe Coding' to 'Vibe Software Engineering'" (https://substack.com/inbox/post/162152910) offers insights on integrating branding elements directly into the development process
+
 ## What These Prompts Do
 
 The templates in this repository are designed to automate the Spec-Then-Code approach by:
