@@ -41,6 +41,18 @@ A cornerstone of Spec-Then-Code is how it establishes clear completion criteria:
 
 By defining "done" with precision, Spec-Then-Code prevents the common pitfall where AIs mark tasks complete while missing critical dependencies or edge cases.
 
+### Multi-AI Cross-Validation
+
+A helpful enhancement to the verification process is using multiple AI models to cross-validate each other's work:
+
+- **Complementary Strengths** — Different AI models may excel in different areas or have varied approaches to problem-solving.
+
+- **Catching Oversights** — Having one AI review another's implementation plan can identify missing dependencies or edge cases.
+
+- **Improved Confidence** — When multiple independent AI systems arrive at similar solutions, it increases confidence in the approach.
+
+This technique is particularly valuable for critical components where thoroughness is essential.
+
 ## Context Window Management
 
 A key benefit of Spec-Then-Code is how it manages the limited context windows of both humans and AI:
