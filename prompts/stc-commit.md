@@ -72,7 +72,7 @@ Write a commit message for the changes I just made.
 Write a commit message based on:
 1. The git diff
 2. The specification in [path/to/spec.md]
-3. The implementation in [path/to/implementation.md]
+3. The plan in [path/to/stc-plan.md]
 
 Focus on how these changes address the requirements specified in the spec file.
 ```

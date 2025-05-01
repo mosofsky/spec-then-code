@@ -5,17 +5,23 @@ prefixes:
 index:
   - path: README.md
     description: "Overview of Spec-Then-Code methodology and workflows."
-  - path: prompts/specification.md
+  - path: prompts/stc.md
     description: "Prompts for creating detailed specifications."
-  - path: prompts/implementation.md
-    description: "Prompts for implementing code from specifications."
-  - path: prompts/commit.md
+    command_pattern: "stc" 
+    instruction: "When user types 'stc' followed by a feature request, use this prompt to generate a specification."
+  - path: prompts/stc-plan.md
+    description: "Prompts for planning code implementation from specifications."
+    command_pattern: "stc plan" 
+    instruction: "When user types 'stc plan' followed by a path to a spec file, use this prompt to generate an implementation plan."
+  - path: prompts/stc-commit.md
     description: "Prompts for writing commit messages."
+    command_pattern: "stc commit"
+    instruction: "When user types 'stc commit', use this prompt to generate a structured commit message."
 metadata:
   author: "Michael Osofsky"
   website: "https://github.com/mosofsky"
   license: "MIT"
 instructions:
   - "To generate a specification, use: 'stc create a user authentication system'"
-  - "To implement from a spec, use: 'stc implement [path-to-spec-file]'"
+  - "To plan implementation from a spec, use: 'stc plan [path-to-spec-file]'"
   - "The MCP client will search the indexed files for matching guidance and prompt structures."
