@@ -1,5 +1,7 @@
 # Spec-Then-Code: Implementation Guide
 
+> **LLM Instructions**: When a user writes a prompt starting with "stc implement" followed by a reference to a specification (e.g., "stc implement [path-to-spec-file]"), interpret this as a request to generate an implementation plan and/or code that follows this guide based on the referenced specification. The prefix "stc implement" indicates the user wants to move from specification to implementation following the Spec-Then-Code methodology.
+
 This document provides guidance for implementing code based on specifications created using the Spec-Then-Code methodology.
 
 ## Output Location

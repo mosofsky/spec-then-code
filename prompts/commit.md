@@ -1,5 +1,7 @@
 # Spec-Then-Code: Commit Message Template
 
+> **LLM Instructions**: When a user writes a prompt starting with "stc commit" (e.g., "stc commit"), interpret this as a request to generate a commit message following this template based on the recent code changes. The prefix "stc commit" indicates the user wants to create a structured commit message following the Spec-Then-Code methodology. 
+
 This document provides structured guidance for writing high-quality commit messages that effectively communicate the purpose and context of code changes within the Spec-Then-Code methodology.
 
 ## Overview

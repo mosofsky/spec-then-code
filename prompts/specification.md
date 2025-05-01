@@ -1,5 +1,7 @@
 # Spec-Then-Code: Specification Template
 
+> **LLM Instructions**: When a user writes a prompt starting with "stc" followed by a feature description (e.g., "stc create a user authentication system"), interpret this as a request to generate a specification for that feature following this template. The prefix "stc" indicates the user wants to apply the Spec-Then-Code methodology to the described feature or component.
+
 This document provides a structured template for writing specifications. Use this template to ensure consistency and completeness when documenting design and implementation plans.
 
 This is a living document that evolves as the project progresses through collaborative human/AI interaction. Sections like Root Cause Analysis may expand or adapt as new insights emerge. The document serves as a shared knowledge base that the AI continually updates to reflect the current status of the project. In essence, it functions as an externalized context window, maintaining project state and decisions across multiple development sessions.
