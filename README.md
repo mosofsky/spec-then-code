@@ -53,6 +53,24 @@ A helpful enhancement to the verification process is using multiple AI models to
 
 This technique is particularly valuable for critical components where thoroughness is essential.
 
+### Recursive Planning Technique
+
+When dealing with particularly complex tasks, a single level of planning may be insufficient. The recursive planning technique involves treating complex implementation steps as "mini-projects" with their own detailed plans:
+
+- **Plan-Within-A-Plan** — Break down complex implementation steps into their own detailed, structured plans before writing any code.
+
+- **On-Demand Decomposition** — Recognize when a task is too large or intricate for a single prompt and pause to create a sub-plan.
+
+- **Contextual Focus** — Each mini-plan maintains the context of the larger goal while allowing focused attention on specific implementation details.
+
+As Armando Maynez describes in his article "From 'Vibe Coding' to 'Vibe Software Engineering'" (https://substack.com/inbox/post/162152910):
+
+> "I realized that if a task felt too large or intricate for a single prompt, it probably was. The solution? When faced with such a task, I learned to pause the coding and first ask Cursor itself to create a detailed, step-by-step implementation plan for that specific task. Essentially, I was applying my planning methodology recursively."
+
+> "By breaking down the complex task into a mini-project with its own checklist within the main chat window, I could guide Cursor through smaller, more manageable steps, leading to much more reliable results. Recognizing when to double-click and create these sub-plans became a crucial skill, honed by experience and the occasional Cursor mishap."
+
+This recursive approach significantly improves reliability when implementing complex features and helps maintain focus throughout the development process.
+
 ## Context Window Management
 
 A key benefit of Spec-Then-Code is how it manages the limited context windows of both humans and AI:
