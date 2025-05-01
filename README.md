@@ -63,13 +63,17 @@ When dealing with particularly complex tasks, a single level of planning may be 
 
 - **Contextual Focus** — Each mini-plan maintains the context of the larger goal while allowing focused attention on specific implementation details.
 
+- **Test-First Mini-Iterations** — Start each sub-task with a failing test that defines the expected behavior, following Uncle Bob Martin's Clean Code principles and Test-Driven Development methodology.
+
 As Armando Maynez describes in his article "From 'Vibe Coding' to 'Vibe Software Engineering'" (https://substack.com/inbox/post/162152910):
 
 > "I realized that if a task felt too large or intricate for a single prompt, it probably was. The solution? When faced with such a task, I learned to pause the coding and first ask Cursor itself to create a detailed, step-by-step implementation plan for that specific task. Essentially, I was applying my planning methodology recursively."
 
 > "By breaking down the complex task into a mini-project with its own checklist within the main chat window, I could guide Cursor through smaller, more manageable steps, leading to much more reliable results. Recognizing when to double-click and create these sub-plans became a crucial skill, honed by experience and the occasional Cursor mishap."
 
-This recursive approach significantly improves reliability when implementing complex features and helps maintain focus throughout the development process.
+This recursive approach, when combined with Test-Driven Development principles, creates a powerful workflow: each mini-plan's steps begin with tests that fail until properly implemented. This "red-green-refactor" cycle applied at the micro-level ensures that even the smallest components meet their specifications before being integrated. As Uncle Bob Martin emphasizes, letting tests drive development leads to more modular, maintainable code with built-in verification — a perfect complement to detailed planning.
+
+The combined approach significantly improves reliability when implementing complex features and helps maintain focus throughout the development process while ensuring correctness at every step.
 
 ## Context Window Management
 
