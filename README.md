@@ -131,3 +131,14 @@ Want to use these prompts in Cursor, Windsurf, or other AI-powered IDEs without 
    - Once connected, you can access these prompts directly in your IDE
    - Just use the `stc` prefix (e.g., `stc create a login system`)
 
+### Use as Workflows in Windsurf and Cursor
+
+An alternative is to copy and paste these prompts into your IDE as what Windsurf calls "workflows":
+
+- **In Windsurf (Cascade)**  
+  Save the prompt steps as a `.md` file in your repo under `.windsurf/workflows/`, e.g. `.windsurf/workflows/spec-then-code.md`. This turns the prompt into a slash command you can run anytime, like `/spec-then-code-login-system`. Cascade will execute the steps sequentially, letting you standardize planning, implementation, and test writing across your team.
+
+- **In Cursor (Agent Mode)**  
+  While Cursor doesn’t have a native `.md` workflow loader, you can keep the prompt in a spec file or reuse it directly in the chat window. Cursor’s Agent Mode supports recursive planning and will follow structured templates step-by-step if you paste them in. You can also create a custom `.cursorrules.json` file to help the model focus on applying the Spec-Then-Code pattern in designated directories or contexts.
+
+Using these prompts as workflows transforms your IDE from a code generator into a full development assistant that enforces best practices, verification criteria, and consistency — without needing to reinvent your process for every task.
